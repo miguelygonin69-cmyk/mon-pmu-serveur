@@ -17,7 +17,7 @@ last_stakes_cache = {}
 
 # --- CONFIGURATION API ---
 # CORRECTION MAJEURE ICI : Passage sur online.pmu.fr et client/1
-PMU_BASE_URL = "https://online.pmu.fr/rest/client/1"
+PMU_BASE_URL = "https://offline.pmu.fr/rest/client/1"
 
 HEADERS = {
     'Accept': 'application/json',
@@ -130,3 +130,4 @@ if __name__ == "__main__":
     # Configuration vitale pour Render
     port = int(os.environ.get("PORT", 10000))
     app.run(host='0.0.0.0', port=port)
+
